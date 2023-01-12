@@ -20,7 +20,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-
+      - name: Download Pluto
+      uses: FairwindsOps/pluto/github-action@master
+      - name: Use pluto
+        run: |
+          pluto detect-files -d ./Kubernetes/Manifests/coolapi
+          
       # recommandations "static code analytic" + bonnes pratiques
       # https://github.com/zegl/kube-score/blob/master/README_CHECKS.md
       - name: Test Kube-score
