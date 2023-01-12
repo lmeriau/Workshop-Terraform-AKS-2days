@@ -21,7 +21,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Download Pluto
-      uses: FairwindsOps/pluto/github-action@master
+        uses: FairwindsOps/pluto/github-action@master
       - name: Use pluto
         run: |
           pluto detect-files -d ./Kubernetes/Manifests/coolapi
