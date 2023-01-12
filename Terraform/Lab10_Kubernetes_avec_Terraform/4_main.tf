@@ -13,7 +13,7 @@ resource "kubernetes_namespace" "Terra-k8s-ns" {
       app = "coolapi"
     }
 
-    name = "terraform-ex-namespace"
+    name = "terraform-ex-namespace-lmu"
   }
 }
 
